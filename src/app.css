@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+@layer components {
+	.text-link {
+		@apply underline underline-offset-2 hover:no-underline;
+	}
+	.menu-vertical {
+		@apply flex flex-col gap-0.5;
+	}
+	.menu-vertical-item,
+	.menu-vertical a {
+		@apply block p-2 rounded transition-colors hover:bg-gray-200;
+
+		&.active {
+			@apply bg-gray-300;
+		}
+	}
+}

@@ -1,2 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="h-200 bg-amber-400"></div>
+<div class="h-200 bg-amber-500"></div>
+<div class="h-200 bg-amber-600"></div>
+<div class="h-200 bg-amber-700"></div>
