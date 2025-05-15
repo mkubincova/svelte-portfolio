@@ -1,4 +1,1 @@
-<div class="h-200 bg-amber-400"></div>
-<div class="h-200 bg-amber-500"></div>
-<div class="h-200 bg-amber-600"></div>
-<div class="h-200 bg-amber-700"></div>
+<h1 class="text-center text-2xl mb-10">Hello there! 👋</h1>

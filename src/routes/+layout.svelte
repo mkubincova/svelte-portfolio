@@ -1,14 +1,15 @@
 <script lang="ts">
 	import '../app.css';
-	import { Header, Footer, Navigation } from '$lib/components';
+	import { Navigation, Footer, Sidebar } from '$lib/components';
 	let { children } = $props();
 </script>
 
-<div class="h-screen grid lg:grid-cols-[300px_auto]">
-	<Header class="col-span-full" />
-	<Navigation class="hidden lg:flex border-r" />
-	<main class="overflow-auto">
+<div class="h-screen bg-secondary text-primary p-4">
+	<Sidebar>
+		<Navigation />
+		<Footer />
+	</Sidebar>
+	<main class="overflow-auto h-full lg:ml-[calc(var(--sidebar-width))] pl-4 pt-8">
 		{@render children()}
 	</main>
-	<Footer class="col-span-full" />
 </div>

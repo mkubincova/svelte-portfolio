@@ -1,5 +1,30 @@
 @import 'tailwindcss';
 
+:root {
+	/* colors */
+	--black: #2c2c2c;
+	--white: #ffffff;
+	--gray: #cececa;
+	--yellow: #f8d88e;
+	--yellow-dark: #dfbc58;
+	--green: #c7d0bc;
+	--green-dark: #8fa776;
+	--purple: #a2a6fd;
+	--purple-dark: #7c7ff6;
+	--beige: #f8f8f1;
+	--beige-dark: #f1efe3;
+
+	/* components */
+	--sidebar-width: 300px;
+	--sidebar-offset: 16px;
+}
+
+@theme {
+	--color-primary: var(--black);
+	--color-secondary: var(--beige);
+	--color-accent: var(--yellow);
+}
+
 @layer components {
 	.text-link {
 		@apply underline underline-offset-2 hover:no-underline;
@@ -9,10 +34,16 @@
 	}
 	.menu-vertical-item,
 	.menu-vertical a {
-		@apply block p-2 rounded transition-colors hover:bg-gray-200;
+		@apply flex gap-2 p-2 rounded transition-colors hover:bg-secondary/20;
 
 		&.active {
-			@apply bg-gray-300;
+			@apply text-accent font-bold;
 		}
+		& svg {
+			@apply size-6;
+		}
+	}
+	.card {
+		@apply bg-accent rounded-lg p-4 shadow-xl;
 	}
 }
