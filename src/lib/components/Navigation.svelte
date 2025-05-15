@@ -19,6 +19,18 @@
 			label: 'Download CV'
 		}
 	];
+	const appLinks = [
+		{
+			href: '/mini-apps?app=recipe-app-frontend-iota',
+			icon: 'ph:chef-hat',
+			label: 'Cook book'
+		},
+		{
+			href: '/mini-apps?app=weather-app-mkubincova',
+			icon: 'ph:cloud-sun',
+			label: 'Weather'
+		}
+	];
 </script>
 
 <nav class="flex flex-col gap-12 p-4">
@@ -56,16 +68,13 @@
 	<div>
 		<h2 class="font-bold text-sm px-2 mb-1 opacity-70">Mini apps</h2>
 		<ul class="menu-vertical">
-			<li>
-				<a href="https://recipe-app-frontend-iota.vercel.app/" target="_blank"
-					><Icon icon="ph:chef-hat" />Cook book</a
-				>
-			</li>
-			<li>
-				<a href="https://weather-app-mkubincova.vercel.app/" target="_blank"
-					><Icon icon="ph:cloud-sun" />Weather</a
-				>
-			</li>
+			{#each appLinks as { href, icon, label }}
+				<li>
+					<a {href} class:active={`${page.url.pathname}?${page.url.searchParams}` === href}
+						><Icon {icon} />{label}</a
+					>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </nav>
