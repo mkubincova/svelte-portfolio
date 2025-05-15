@@ -13,6 +13,7 @@
 	--purple-dark: #7c7ff6;
 	--beige: #f8f8f1;
 	--beige-dark: #f1efe3;
+	--red: #aa0f0f;
 
 	/* components */
 	--sidebar-width: 300px;
@@ -23,6 +24,8 @@
 	--color-primary: var(--black);
 	--color-secondary: var(--beige);
 	--color-accent: var(--yellow);
+	--color-error: var(--red);
+	--color-muted: var(--gray);
 }
 
 @layer components {
