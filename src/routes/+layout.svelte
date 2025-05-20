@@ -14,7 +14,7 @@
 		<Navigation />
 		<Footer />
 	</Sidebar>
-	<main id="main" class="overflow-auto h-full lg:ml-[calc(var(--sidebar-width))] pl-4">
+	<main id="main" class="overflow-auto h-full lg:ml-[calc(var(--sidebar-width))] lg:pl-4">
 		{@render children()}
 	</main>
 </div>
