@@ -1,13 +1,5 @@
 <script lang="ts">
-	interface Project {
-		name: string;
-		description: string;
-		shortDescription: string;
-		client: string;
-		duration: string;
-		role: string;
-		technologies: string[];
-	}
+	import type { Project } from '$lib/projects';
 
 	let { project }: { project: Project } = $props();
 </script>
