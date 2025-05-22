@@ -16,7 +16,7 @@
 	</Sidebar>
 	<main
 		id="main"
-		class="overflow-auto px-4 h-full w-5xl mx-w-full mx-auto lg:ml-[calc(var(--sidebar-width))] lg:pl-4"
+		class="overflow-auto px-4 h-full w-5xl mx-w-full mx-auto lg:ml-[calc(var(--sidebar-w))] mt-[var(--header-h)] lg:pl-4"
 	>
 		{@render children()}
 	</main>

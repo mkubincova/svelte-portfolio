@@ -18,8 +18,8 @@
 	--red: #aa0f0f;
 
 	/* components */
-	--sidebar-width: 300px;
-	--sidebar-offset: 16px;
+	--sidebar-w: 300px;
+	--header-h: 56px;
 }
 
 @theme {

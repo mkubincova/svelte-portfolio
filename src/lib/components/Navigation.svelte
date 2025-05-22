@@ -34,7 +34,6 @@
 </script>
 
 <nav class="flex flex-col gap-12 p-4">
-	<a href="/"><Icon icon="ph:dev-to-logo" class="mx-auto" width={60} height={60} /></a>
 	<div>
 		<h2 class="font-bold text-sm px-2 mb-1 opacity-70">About me</h2>
 		<ul class="menu-vertical">
