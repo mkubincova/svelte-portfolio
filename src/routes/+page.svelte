@@ -4,8 +4,10 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="grid gap-6 md:gap-8 grid-cols-2 xl:grid-cols-3 xl:grid-rows-[1fr_1fr_auto]">
-	<div class="card col-span-2 @container shadow-none"><Hello /></div>
+<div
+	class="page-container grid gap-6 md:gap-8 grid-cols-2 xl:grid-cols-3 xl:grid-rows-[1fr_1fr_auto]"
+>
+	<div class="card col-span-2 @page-container shadow-none"><Hello /></div>
 	<div class="card bg-green text-green-dark min-h-24 col-span-2 xl:row-span-2 xl:col-span-1">
 		<Work />
 	</div>

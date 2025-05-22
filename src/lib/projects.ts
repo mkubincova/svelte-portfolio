@@ -143,8 +143,8 @@ future.`,
 		name: 'DiEscover',
 		client: 'MaibornWolff',
 		duration: '06/2024 - *',
-		shortDescription: `A container app with tools like Flowerpots and Circles to enhance collaboration and organization within the DiE department.`,
-		description: `The DiEscover App is a "container app" that has a variety of apps which
+		shortDescription: `A page-container app with tools like Flowerpots and Circles to enhance collaboration and organization within the DiE department.`,
+		description: `The DiEscover App is a "page-container app" that has a variety of apps which
 help us organise and collaborate as a department. This means that the
 main users of the DiEscover app are also usually from the DiE
 department.
