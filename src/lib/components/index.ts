@@ -6,3 +6,4 @@ export { default as Cv } from './Cv.svelte';
 export { default as Work } from './Work.svelte';
 export { default as ProjectCard } from './ProjectCard.svelte';
 export { default as ProjectCardSmall } from './ProjectCardSmall.svelte';
+export { default as Header } from './Header.svelte';

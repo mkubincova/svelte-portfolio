@@ -64,7 +64,7 @@
 	.card {
 		@apply rounded-lg p-4 shadow-lg;
 	}
-	.page-container {
-		@apply w-5xl max-w-full mx-auto p-8;
+	.page-content {
+		@apply w-full max-w-6xl px-2 mx-auto;
 	}
 }
