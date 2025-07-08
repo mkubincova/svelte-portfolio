@@ -1,13 +1,3 @@
-export interface Project {
-	name: string;
-	description: string;
-	shortDescription: string;
-	client: string;
-	duration: string;
-	role: string;
-	technologies: string[];
-}
-
 export const projects = [
 	{
 		name: 'health.exe',
@@ -154,5 +144,35 @@ is working where, with whom, who is the manager, levels among other
 stuff.`,
 		role: 'Software Engineer',
 		technologies: ['Remix', 'Tailwind', 'Prisma', 'TanStack', 'MongoDB', 'MongoDB Atlas', 'GitLab']
+	}
+];
+
+export const cv_url =
+	'https://docs.google.com/document/d/1pCEdBEHtNjQRjO062Wj673r36v_sgsN7xIMLCdFuL3U/export?format=pdf';
+
+export const jobs = [
+	{
+		title: 'Junior Software Engineer',
+		company: 'MaibornWolff Spain S.L.',
+		startDate: '07/2024',
+		endDate: 'present'
+	},
+	{
+		title: 'Frontend Web Developer',
+		company: 'Pilot, v.o.s.',
+		startDate: '01/2022',
+		endDate: '05/2024'
+	},
+	{
+		title: 'Assistant Teacher of Web and UI Design (Part-time)',
+		company: 'Jönköping University',
+		startDate: '09/2020',
+		endDate: '01/2021'
+	},
+	{
+		title: 'Web Developer and Digital Marketer (Internship)',
+		company: 'Vision Factory',
+		startDate: '03/2020',
+		endDate: '05/2020'
 	}
 ];

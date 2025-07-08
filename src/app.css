@@ -1,70 +1,27 @@
 @import 'tailwindcss';
 
 :root {
-	/* colors */
-	--black: #2c2c2c;
-	--white: #ffffff;
-	--gray: #cececa;
-	--yellow: #ffdf6f;
-	--yellow-dark: #534512;
-	--green: #c4d48c;
-	--green-dark: #0c3100;
-	--purple: #c5b3e9;
-	--purple-dark: #49245d;
-	--blue: #b9cede;
-	--blue-dark: #1c4159;
-	--beige: #f8f8f1;
-	--beige-dark: #f1efe3;
-	--red: #aa0f0f;
-
-	/* components */
-	--sidebar-w: 300px;
-	--header-h: 56px;
+	--header-h: 70px;
 }
 
 @theme {
-	--color-primary: var(--black);
-	--color-secondary: var(--beige);
-	--color-accent: var(--yellow);
-	--color-error: var(--red);
-	--color-muted: var(--gray);
-	--color-yellow: var(--yellow);
-	--color-yellow-dark: var(--yellow-dark);
-	--color-green: var(--green);
-	--color-green-dark: var(--green-dark);
-	--color-purple: var(--purple);
-	--color-purple-dark: var(--purple-dark);
-	--color-blue: var(--blue);
-	--color-blue-dark: var(--blue-dark);
-	--color-beige: var(--beige);
-	--color-beige-dark: var(--beige-dark);
+}
+
+.gradient-morning {
+	background: linear-gradient(to top, #bd674c, #f1bc8d, #e1cdb4, #bdc1c0, #7c9db5);
+}
+
+.gradient-afternoon {
+	background: linear-gradient(to top, #bdc1c0, #7c9db5, #2d5195);
+}
+
+.gradient-evening {
+	background: linear-gradient(to top, #ffb38a, #c17d9a, #6e5b93, #2e3b67, #1b2850);
+}
+
+.gradient-night {
+	background: linear-gradient(to top, #6c97ae, #243c4d, #091219);
 }
 
 @layer components {
-	.text-link {
-		@apply underline underline-offset-2 hover:no-underline;
-	}
-	.btn {
-		@apply cursor-pointer inline-flex items-center gap-2 px-3 py-1.5 tracking-wider rounded bg-primary text-secondary transition-colors hover:bg-primary/80;
-	}
-	.menu-vertical {
-		@apply flex flex-col gap-0.5;
-	}
-	.menu-vertical-item,
-	.menu-vertical a {
-		@apply flex gap-2 p-2 rounded transition-colors hover:bg-secondary/20;
-
-		&.active {
-			@apply text-accent font-bold;
-		}
-		& svg {
-			@apply size-6;
-		}
-	}
-	.card {
-		@apply rounded-lg p-4 shadow-lg;
-	}
-	.page-content {
-		@apply w-full max-w-6xl px-2 mx-auto;
-	}
 }
