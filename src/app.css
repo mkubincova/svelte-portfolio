@@ -1,10 +1,12 @@
 @import 'tailwindcss';
 
-:root {
-	--header-h: 70px;
-}
-
 @theme {
+	--container-width: 1080px;
+	--container-content-width: 680px;
+	--container-content-wide-width: 960px;
+
+	--color-background: #fff;
+	--color-foreground: #000;
 }
 
 .gradient-morning {
@@ -20,8 +22,45 @@
 }
 
 .gradient-night {
-	background: linear-gradient(to top, #6c97ae, #243c4d, #091219);
+	background: linear-gradient(to top, #6c97ae, #243c4d, #142c3f);
+}
+
+@layer base {
+	h1 {
+		@apply font-bold text-4xl mb-2;
+	}
+	h2 {
+		@apply font-bold text-2xl mb-2;
+	}
+	p {
+		@apply text-base leading-7 mb-2;
+	}
 }
 
 @layer components {
+	.x-container {
+		@apply w-[var(--container-width)] max-w-full mx-auto px-6;
+	}
+	.x-container-content {
+		@apply w-[var(--container-content-width)] max-w-full mx-auto;
+	}
+	.x-container-content-wide {
+		@apply w-[var(--container-content-wide-width)] max-w-full mx-auto;
+	}
+
+	.x-btn {
+		@apply bg-foreground text-background px-4 py-2 text-sm tracking-wide rounded-4xl text-nowrap hover:bg-foreground/70;
+	}
+	.x-tag {
+		@apply inline-block bg-foreground/5 text-foreground/80 px-3 py-1 rounded-full text-xs;
+	}
+	.x-nav-link {
+		@apply tracking-wide underline-offset-4 hover:underline;
+	}
+}
+
+@layer utilities {
+	.x-text-header {
+		@apply text-lg mb-4;
+	}
 }
