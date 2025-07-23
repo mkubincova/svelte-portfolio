@@ -3,7 +3,7 @@
 	import { projects } from '$lib/constants';
 </script>
 
-<div class="x-container prose py-8">
+<div class="x-container py-8">
 	<div class="x-container-content">
 		<h1>Recent projects</h1>
 		<p class="x-text-header">
