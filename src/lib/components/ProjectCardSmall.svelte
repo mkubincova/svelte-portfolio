@@ -6,7 +6,7 @@
 
 <a
 	href={`/projects#${project.name}`}
-	class="x-card bg-foreground/5 shadow hover:shadow-lg transition-shadow duration-300"
+	class="x-card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
 >
 	<img src="https://picsum.photos/680/350" alt="" class="mb-2" />
 	<span class="block px-4 pb-2">

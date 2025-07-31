@@ -19,7 +19,7 @@
 				<a
 					href={app.url}
 					target="_blank"
-					class="x-card p-2 flex flex-col aspect-square items-center justify-center shadow hover:shadow-lg transition-shadow duration-300 {app.background}"
+					class="x-card p-2 flex flex-col aspect-square items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300 {app.background}"
 				>
 					<Icon icon={`${app.icon}-duotone`} class="size-1/2" />
 					<h3 class="text-center opacity-80">{app.name}</h3>

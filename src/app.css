@@ -5,24 +5,58 @@
 	--container-content-width: 680px;
 	--container-content-wide-width: 960px;
 
-	--color-background: #fff;
+	--color-background: #f9fafb;
 	--color-foreground: #000;
 }
 
-.gradient-morning {
-	background: linear-gradient(to top, #bd674c, #f1bc8d, #e1cdb4, #bdc1c0, #7c9db5);
+[class^='gradient-']::before,
+[class^='gradient-']::after {
+	content: '';
+	position: absolute;
+	display: block;
+	border-radius: 100%;
+	filter: blur(4rem);
+	aspect-ratio: 1;
+	opacity: 0.8;
+	z-index: -1;
+}
+[class^='gradient-']::before {
+	top: -1.5em;
+	left: -1em;
+	width: 4.5em;
+}
+[class^='gradient-']::after {
+	top: 0.7em;
+	left: 2.5em;
+	width: 2.5em;
 }
 
-.gradient-afternoon {
-	background: linear-gradient(to top, #bdc1c0, #7c9db5, #2d5195);
+.gradient-morning::before {
+	background: #fdb677;
+}
+.gradient-morning::after {
+	background: #338ea5;
 }
 
-.gradient-evening {
-	background: linear-gradient(to top, #ffb38a, #c17d9a, #6e5b93, #2e3b67, #1b2850);
+.gradient-afternoon::before {
+	background: #d5775b;
+}
+.gradient-afternoon::after {
+	background: #ee9b53;
 }
 
-.gradient-night {
-	background: linear-gradient(to top, #6c97ae, #243c4d, #142c3f);
+.gradient-evening::before {
+	background: #c17d9a;
+}
+.gradient-evening::after {
+	background: #2e3b67;
+}
+
+.gradient-night::before {
+	background: #508fb1;
+}
+.gradient-night::after {
+	background: #0f2536;
 }
 
 @layer base {
@@ -55,7 +89,7 @@
 	}
 
 	.x-btn {
-		@apply bg-foreground text-background px-4 py-2 text-sm tracking-wide rounded-4xl text-nowrap flex gap-2 items-center hover:bg-foreground/70 hover:no-underline;
+		@apply bg-foreground text-background px-4 py-2 text-sm tracking-wide rounded-4xl text-nowrap flex gap-2 items-center hover:bg-foreground/80 hover:no-underline;
 	}
 	.x-tag {
 		@apply inline-block bg-foreground/5 text-foreground/80 px-3 py-1 rounded-full text-xs;
