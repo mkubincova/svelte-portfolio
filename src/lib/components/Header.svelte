@@ -14,7 +14,7 @@
 				<a href="/projects" class="x-nav-link">Projects</a>
 			</li>
 			<li>
-				<a href="/" class="x-nav-link">Mini apps</a>
+				<a href="/mini-apps" class="x-nav-link">Mini apps</a>
 			</li>
 			<li>
 				<a href={cv_url} class="x-btn"><Icon icon="ph:download-simple" width={20} />Download CV</a>

@@ -1,8 +1,17 @@
 export const projects = [
 	{
+		name: 'KIRo4LeMi',
+		client: 'Fraunhofer IGCV',
+		duration: '05/2025 - present',
+		shortDescription: `A research project developing an AI-powered assistant robot to support employees with disabilities in assembly tasks.`,
+		description: `The research project KIRo4LeMi (AI-supported robotics for employees with disabilities - KI-gestützte Robotik für leistungsgewandelte Mitarbeiter), envisions utilizing generative AI to develop and assess a versatile assistant robot that aids employees with performance impairments in diverse assembly tasks. The project is funded by VDI VDE IT.`,
+		role: 'Software engineer',
+		technologies: ['Remix', 'Prisma', 'PostgreSQL', 'Azure', 'Open AI', 'Typescript']
+	},
+	{
 		name: 'health.exe',
 		client: 'health.exe',
-		duration: '04/2025 - 05/2025',
+		duration: '04/2025 - 07/2025',
 		shortDescription: `A platform for orthopedic professionals to create and share personalized patient training plans, integrating Azure OpenAI for recommendations.`,
 		description: `MaibornWolff developed the health.exe platform tailored for orthopedic
 healthcare professionals, facilitating the creation and sharing of
@@ -132,7 +141,7 @@ future.`,
 	{
 		name: 'DiEscover',
 		client: 'MaibornWolff',
-		duration: '06/2024 - *',
+		duration: '06/2024 - present',
 		shortDescription: `A page-container app with tools like Flowerpots and Circles to enhance collaboration and organization within the DiE department.`,
 		description: `The DiEscover App is a "page-container app" that has a variety of apps which
 help us organise and collaborate as a department. This means that the
@@ -152,7 +161,7 @@ export const cv_url =
 
 export const jobs = [
 	{
-		title: 'Junior Software Engineer',
+		title: 'Software Engineer',
 		company: 'MaibornWolff Spain S.L.',
 		startDate: '07/2024',
 		endDate: 'present'
@@ -174,5 +183,20 @@ export const jobs = [
 		company: 'Vision Factory',
 		startDate: '03/2020',
 		endDate: '05/2020'
+	}
+];
+
+export const miniApps = [
+	{
+		name: 'Recipes',
+		icon: 'ph:chef-hat',
+		background: 'bg-gradient-to-br from-orange-200 to-red-300 shadow-red-300/50',
+		url: 'https://recipe-app-frontend-iota.vercel.app/'
+	},
+	{
+		name: 'Weather',
+		icon: 'ph:cloud-sun',
+		background: 'bg-gradient-to-br from-green-200 to-blue-300 shadow-blue-300/50',
+		url: 'https://weather-app-mkubincova.vercel.app/'
 	}
 ];

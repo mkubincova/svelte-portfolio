@@ -4,7 +4,7 @@
 	let { project }: { project: Project } = $props();
 </script>
 
-<div>
+<div id={project.name} class="scroll-mt-16">
 	<small class="opacity-80">{project.client} &#x2022; {project.duration}</small>
 	<h2>{project.name}</h2>
 	<img src="https://picsum.photos/680/350" alt="" class="mb-2" />

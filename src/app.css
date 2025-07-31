@@ -32,10 +32,13 @@
 	h2 {
 		@apply font-bold text-2xl mb-2;
 	}
+	h3 {
+		@apply font-bold text-xl;
+	}
 	p {
 		@apply text-base leading-7 mb-2;
 	}
-	a {
+	a:not(.x-btn):not(.x-card) {
 		@apply underline-offset-4 hover:underline;
 	}
 }
@@ -59,6 +62,9 @@
 	}
 	.x-nav-link {
 		@apply tracking-wide;
+	}
+	.x-card {
+		@apply block rounded-xl overflow-hidden;
 	}
 }
 

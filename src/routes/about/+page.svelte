@@ -1,13 +1,13 @@
 <script>
-	import { cv_url, jobs } from '$lib/constants';
+	import { ProjectCardSmall } from '$lib/components';
+	import { cv_url, jobs, projects } from '$lib/constants';
 	import Icon from '@iconify/svelte';
+
+	const recentProjects = projects.slice(0, 3);
 </script>
 
 <div class="x-container py-8">
 	<div class="x-container-content-wide flex items-end gap-8">
-		<div class="flex-1">
-			<img src="https://picsum.photos/id/319/500" alt="" class="w-full h-full object-contain" />
-		</div>
 		<div class="w-2/3">
 			<h1>Hi!</h1>
 			<p class="x-text-header">
@@ -17,6 +17,9 @@
 				quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam ad cum ea.
 				Sint consequatur animi labore natus reprehenderit inventore.
 			</p>
+		</div>
+		<div class="flex-1 border rounded-xl rotate-3 overflow-hidden shadow-lg">
+			<img src="profile-pic.png" alt="" class="w-full h-full object-contain" />
 		</div>
 	</div>
 	<div class="x-container-content mb-6 mt-12 flex flex-col gap-8">
@@ -61,13 +64,13 @@
 				</p>
 			{/each}
 		</section>
-		<section>
-			<h2>Recent projects</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam veritatis totam
-				consequuntur qui molestiae officiis fugiat illo, sit tempore reprehenderit error similique
-				pariatur mollitia, tenetur quibusdam sed, iure explicabo cum.
-			</p>
-		</section>
 	</div>
+	<section class="x-container-content-wide">
+		<h2>Recent projects</h2>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+			{#each recentProjects as project}
+				<ProjectCardSmall {project} />
+			{/each}
+		</div>
+	</section>
 </div>
