@@ -1,9 +1,9 @@
 export interface Project {
 	name: string;
+	type: 'work' | 'personal';
 	description: string;
-	shortDescription: string;
-	client: string;
-	duration: string;
-	role: string;
 	technologies: string[];
+	repository_url?: string;
+	demo_url?: string;
+	image_url?: string;
 }
