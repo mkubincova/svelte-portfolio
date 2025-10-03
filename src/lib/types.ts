@@ -7,4 +7,5 @@ export interface Project {
 	demo_url?: string;
 	image_url?: string;
 	logo_url?: string;
+	color?: string;
 }
