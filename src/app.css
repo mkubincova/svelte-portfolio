@@ -9,54 +9,8 @@
 	--color-foreground: #000;
 }
 
-[class^='gradient-']::before,
-[class^='gradient-']::after {
-	content: '';
-	position: absolute;
-	display: block;
-	border-radius: 100%;
-	filter: blur(4rem);
-	aspect-ratio: 1;
-	opacity: 0.8;
-	z-index: -1;
-}
-[class^='gradient-']::before {
-	top: -1.5em;
-	left: -1em;
-	width: 4.5em;
-}
-[class^='gradient-']::after {
-	top: 0.7em;
-	left: 2.5em;
-	width: 2.5em;
-}
-
-.gradient-morning::before {
-	background: #fdb677;
-}
-.gradient-morning::after {
-	background: #338ea5;
-}
-
-.gradient-afternoon::before {
-	background: #d5775b;
-}
-.gradient-afternoon::after {
-	background: #ee9b53;
-}
-
-.gradient-evening::before {
-	background: #c17d9a;
-}
-.gradient-evening::after {
-	background: #2e3b67;
-}
-
-.gradient-night::before {
-	background: #508fb1;
-}
-.gradient-night::after {
-	background: #0f2536;
+html {
+	scroll-behavior: smooth;
 }
 
 @layer base {

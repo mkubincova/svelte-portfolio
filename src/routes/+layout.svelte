@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	let { children } = $props();
 </script>
 
@@ -14,4 +15,5 @@
 	<main id="main" class="pt-8 grow shrink basis-[0px]">
 		{@render children()}
 	</main>
+	<Footer />
 </div>

@@ -1,5 +1,5 @@
 <script>
-	import { cv_url } from '$lib/constants';
+	import { cv_url, miniApps, projects } from '$lib/constants';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -19,50 +19,41 @@
 			<img src="profile-pic.png" alt="" class="w-full h-full object-contain" />
 		</div>
 	</div>
-	<div id="skills" class="x-container-content-wide">
-		<h2>Skills</h2>
-		<section class="bg-foreground/5 rounded-xl p-6">
-			<ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>TypeScript</li>
-				<li>React</li>
-				<li>Next.js</li>
-				<li>Svelte</li>
-				<li>SvelteKit</li>
-				<li>TanStack</li>
-				<li>Tailwind</li>
-				<li>Node.js</li>
-				<li>Express</li>
-				<li>Prisma</li>
-				<li>Nest.js</li>
-				<li>PostgreSQL</li>
-				<li>MongoDB</li>
-				<li>Azure</li>
-				<li>Azure OpenAI</li>
-				<li>LangChain</li>
-				<li>Docker</li>
-				<li>Git</li>
-				<li>GitHub</li>
-				<li>GitLab</li>
-				<li>Jest</li>
-				<li>WebRTC</li>
-				<li>AdobeXD</li>
-				<li>Figma</li>
-			</ul>
-		</section>
-	</div>
 	<div id="projects" class="x-container-content-wide">
 		<h2>Projects</h2>
-		<p class="x-text-header">
-			Here are some of my recent projects. For a full list, please visit my
-		</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			{#each projects as project}
+				<div class="border rounded-lg p-4">
+					<h3 class="font-bold">{project.name}</h3>
+					<img src={project.logo_url} alt="" class="w-full h-auto mb-2" />
+					<img src={project.image_url} alt="" class="w-full h-auto mb-2" />
+					<p>{project.description}</p>
+					<ul class="list-disc pl-5">
+						{#each project.technologies as tech}
+							<li>{tech}</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
+		</div>
 	</div>
 	<div id="mini-apps" class="x-container-content-wide">
 		<h2>Mini Apps</h2>
-		<p class="x-text-header">
-			Here are some of my recent mini apps. For a full list, please visit my
-		</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			{#each miniApps as project}
+				<div class="border rounded-lg p-4">
+					<h3 class="font-bold">{project.name}</h3>
+					<img src={project.image_url} alt="" class="w-full h-auto mb-2" />
+					<p>{project.description}</p>
+					<a href={project.demo_url} class="x-btn">View Project</a>
+					<a href={project.repository_url} class="x-btn">View Code</a>
+					<ul class="list-disc pl-5">
+						{#each project.technologies as tech}
+							<li>{tech}</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>

@@ -1,28 +1,25 @@
-export const projects = [
+import type { Project } from './types';
+
+export const projects: Project[] = [
 	{
 		name: 'KIRo4LeMi',
-		client: 'Fraunhofer IGCV',
-		duration: '05/2025 - present',
-		shortDescription: `A research project developing an AI-powered assistant robot to support employees with disabilities in assembly tasks.`,
+		// shortDescription: `A research project developing an AI-powered assistant robot to support employees with disabilities in assembly tasks.`,
 		description: `The research project KIRo4LeMi (AI-supported robotics for employees with disabilities - KI-gestützte Robotik für leistungsgewandelte Mitarbeiter), envisions utilizing generative AI to develop and assess a versatile assistant robot that aids employees with performance impairments in diverse assembly tasks. The project is funded by VDI VDE IT.`,
-		role: 'Software engineer',
-		technologies: ['Remix', 'Prisma', 'PostgreSQL', 'Azure', 'Open AI', 'Typescript']
+		technologies: ['Remix', 'Prisma', 'PostgreSQL', 'Azure', 'Open AI', 'Typescript'],
+		logo_url: '/kiro4lemi-logo.svg'
 	},
 	{
 		name: 'health.exe',
-		client: 'health.exe',
-		duration: '04/2025 - 07/2025',
-		shortDescription: `A platform for orthopedic professionals to create and share personalized patient training plans, integrating Azure OpenAI for recommendations.`,
+		// shortDescription: `A platform for orthopedic professionals to create and share personalized patient training plans, integrating Azure OpenAI for recommendations.`,
 		description: `MaibornWolff developed the health.exe platform tailored for orthopedic
-healthcare professionals, facilitating the creation and sharing of
-personalized patient training plans. It integrates cutting-edge
-technologies such as Azure OpenAI to generate recommendations.
-The project comprised two applications: one for orthopedic surgeons
-to oversee patient management and training plans, and another for
-patients to access their personalized plans.
-The platform enables therapists to work more efficiently, provide more
-personalized patient care, and improve the quality of therapy.`,
-		role: 'Software engineer',
+		healthcare professionals, facilitating the creation and sharing of
+		personalized patient training plans. It integrates cutting-edge
+		technologies such as Azure OpenAI to generate recommendations.
+		The project comprised two applications: one for orthopedic surgeons
+		to oversee patient management and training plans, and another for
+		patients to access their personalized plans.
+		The platform enables therapists to work more efficiently, provide more
+		personalized patient care, and improve the quality of therapy.`,
 		technologies: [
 			'NX Monorepo',
 			'Next.js',
@@ -38,32 +35,30 @@ personalized patient care, and improve the quality of therapy.`,
 			'Github',
 			'Docker',
 			'LangChain'
-		]
+		],
+		logo_url: '/healthexe-logo.svg'
 	},
 	{
 		name: 'BrothAR',
-		client: 'TrainAR GmbH',
-		duration: '03/2025 - 04/2025',
-		shortDescription: `An augmented reality app for Magic Leap Smart Glasses enabling live expert support with video streaming, voice communication, and annotations.`,
+		// shortDescription: `An augmented reality app for Magic Leap Smart Glasses enabling live expert support with video streaming, voice communication, and annotations.`,
 		description: `In collaboration with TrainAR, MaibornWolff created BrothAR, an
-augmented reality application designed for Magic Leap Smart Glasses.
-BrothAR allows users to start a support session with experts who can
-view live video streams from the AR glasses. It features bidirectional
-voice communication and enables experts to add annotations to the
-video stream, which appear as virtual objects on the user's glasses.
-These capabilities enhance troubleshooting and remote support,
-raising the bar for industrial maintenance and expert consultation. A
-key challenge was developing server components to be completely
-self-hosted, ensuring the application's suitability for highly sensitive
-environments.`,
-		role: 'Frontend developer',
-		technologies: ['Next.js', 'WebRTC', 'Azure', 'Github', 'Unity', 'Github Actions']
+		augmented reality application designed for Magic Leap Smart Glasses.
+		BrothAR allows users to start a support session with experts who can
+		view live video streams from the AR glasses. It features bidirectional
+		voice communication and enables experts to add annotations to the
+		video stream, which appear as virtual objects on the user's glasses.
+		These capabilities enhance troubleshooting and remote support,
+		raising the bar for industrial maintenance and expert consultation. A
+		key challenge was developing server components to be completely
+		self-hosted, ensuring the application's suitability for highly sensitive
+		environments.`,
+		technologies: ['Next.js', 'WebRTC', 'Azure', 'Github', 'Unity', 'Github Actions'],
+		logo_url: '/brothar-logo.png'
 	},
 	{
 		name: 'terrassign Case Management Tool',
 		client: 'terrassign GmbH',
-		duration: '09/2024 - 03/2025',
-		shortDescription: `A case management tool for terrassign GmbH, featuring process automation, centralized communication, and document management.`,
+		// shortDescription: `A case management tool for terrassign GmbH, featuring process automation, centralized communication, and document management.`,
 		description: `MaibornWolff and Ojemba partnered to develop a customized case
 management tool for terrassign GmbH, a leading provider of employee
 assignment services in Germany. This tool features a user-friendly
@@ -80,7 +75,6 @@ satisfaction and established a foundation for scalable and efficient
 case management. The collaborative efforts between MaibornWolff
 and Ojemba ensured a customer-focused and cost-effective project
 execution.`,
-		role: 'Software Engineer',
 		technologies: [
 			'Next.js',
 			'Tailwind',
@@ -92,13 +86,13 @@ execution.`,
 			'PostgreSQL',
 			'TypeORM',
 			'Jest'
-		]
+		],
+		logo_url: '/terrassing-logo.png'
 	},
 	{
 		name: 'HWZ ExamBot',
 		client: 'HWZ Hochschule für Wirtschaft Zürich',
-		duration: '11/2024 - 01/2025',
-		shortDescription: `A proof-of-concept app for educators to generate AI-powered exams and students to take interactive quizzes with instant feedback.`,
+		// shortDescription: `A proof-of-concept app for educators to generate AI-powered exams and students to take interactive quizzes with instant feedback.`,
 		description: `The HWZ ExamBot is a proof-of-concept project designed to explore
 the integration of AI technology within the educational framework.
 The web application features two main components: Exam Generation
@@ -111,14 +105,13 @@ use. The second component, Engaging Student Quizzes, provides
 students with interactive quizzes based on the prepared questions,
 offering an enjoyable and effective method for assessing their
 knowledge with instant feedback and adaptability.`,
-		role: 'Frontend developer, UX/UI designer',
-		technologies: ['Next.js', 'Typescript', 'Tailwind', 'Node.js', 'Azure OpenAI Services']
+		technologies: ['Next.js', 'Typescript', 'Tailwind', 'Node.js', 'Azure OpenAI Services'],
+		logo_url: '/hwz-logo.svg'
 	},
 	{
 		name: 'ClouDiE QuizBot',
 		client: 'MaibornWolff',
-		duration: '07/2024 - 10/2024',
-		shortDescription: `An interactive quiz platform for AWS exam preparation, replacing video content with engaging, AI-powered questions.`,
+		// shortDescription: `An interactive quiz platform for AWS exam preparation, replacing video content with engaging, AI-powered questions.`,
 		description: `The ClouDIE Quizbot project is revolutionizing AWS exam preparation by
 introducing an interactive quiz platform. With the help of Langchain, we
 created a Next.js application featuring a React frontend, allowing users
@@ -126,7 +119,6 @@ to replace hours of video content with engaging quiz questions. This
 innovative platform is set to integrate seamlessly into our internal IT
 landscape, aiming to enhance efficiency and save valuable time in the
 future.`,
-		role: 'Software Engineer',
 		technologies: [
 			'React',
 			'TypeScript',
@@ -136,13 +128,13 @@ future.`,
 			'LangChain',
 			'Tailwind',
 			'daisyUI'
-		]
+		],
+		image_url: '/cloudie.png'
 	},
 	{
 		name: 'DiEscover',
 		client: 'MaibornWolff',
-		duration: '06/2024 - present',
-		shortDescription: `A page-container app with tools like Flowerpots and Circles to enhance collaboration and organization within the DiE department.`,
+		// shortDescription: `A page-container app with tools like Flowerpots and Circles to enhance collaboration and organization within the DiE department.`,
 		description: `The DiEscover App is a "page-container app" that has a variety of apps which
 help us organise and collaborate as a department. This means that the
 main users of the DiEscover app are also usually from the DiE
@@ -151,52 +143,29 @@ Some of the inside applications are Flowerpots and Circles. This helps
 other members of the DiE department to know more about others, who
 is working where, with whom, who is the manager, levels among other
 stuff.`,
-		role: 'Software Engineer',
-		technologies: ['Remix', 'Tailwind', 'Prisma', 'TanStack', 'MongoDB', 'MongoDB Atlas', 'GitLab']
+		technologies: ['Remix', 'Tailwind', 'Prisma', 'TanStack', 'MongoDB', 'MongoDB Atlas', 'GitLab'],
+		image_url: '/diescover.png'
 	}
 ];
 
 export const cv_url =
 	'https://docs.google.com/document/d/1pCEdBEHtNjQRjO062Wj673r36v_sgsN7xIMLCdFuL3U/export?format=pdf';
 
-export const jobs = [
+export const miniApps: Project[] = [
 	{
-		title: 'Software Engineer',
-		company: 'MaibornWolff Spain S.L.',
-		startDate: '07/2024',
-		endDate: 'present'
+		name: 'Recipe App',
+		description: 'A collection of recipes filtered by categories with Strapi CMS.',
+		technologies: ['React', 'Sass', 'GraphQL', 'Strapi'],
+		repository_url: 'https://github.com/mkubincova/recipe-app-frontend',
+		demo_url: 'https://recipe-app-frontend-iota.vercel.app/',
+		image_url: '/recipes.png'
 	},
 	{
-		title: 'Frontend Web Developer',
-		company: 'Pilot, v.o.s.',
-		startDate: '01/2022',
-		endDate: '05/2024'
-	},
-	{
-		title: 'Assistant Teacher of Web and UI Design (Part-time)',
-		company: 'Jönköping University',
-		startDate: '09/2020',
-		endDate: '01/2021'
-	},
-	{
-		title: 'Web Developer and Digital Marketer (Internship)',
-		company: 'Vision Factory',
-		startDate: '03/2020',
-		endDate: '05/2020'
-	}
-];
-
-export const miniApps = [
-	{
-		name: 'Recipes',
-		icon: 'ph:chef-hat',
-		background: 'bg-gradient-to-br from-orange-200 to-red-300 shadow-red-300/50',
-		url: 'https://recipe-app-frontend-iota.vercel.app/'
-	},
-	{
-		name: 'Weather',
-		icon: 'ph:cloud-sun',
-		background: 'bg-gradient-to-br from-green-200 to-blue-300 shadow-blue-300/50',
-		url: 'https://weather-app-mkubincova.vercel.app/'
+		name: 'Weather App',
+		description: 'A weather app displaying current weather and forecasts for different locations.',
+		technologies: ['Vue', 'TailwindCSS', 'Mapbox', 'OpenWeatherMap'],
+		repository_url: 'https://github.com/mkubincova/weather-app',
+		demo_url: 'https://weather-app-mkubincova.vercel.app/',
+		image_url: '/weather.png'
 	}
 ];
