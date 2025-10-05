@@ -10,8 +10,8 @@
 <div class="page-content pb-20">
 	<section id="about" class="text-center pt-20">
 		<h1>Hi, I'm Magda</h1>
-		<h2 class="text-accent text-2xl mt-1">Fullstack Web Developer</h2>
-		<p class="sm:text-lg leading-6 sm:leading-7 w-[55ch] max-w-full mx-auto my-4">
+		<h2 class="text-accent text-xl sm:text-2xl mt-1">Fullstack Web Developer</h2>
+		<p class="leading-text mx-auto my-4">
 			I specialize in creating <strong>user-centered</strong> web applications that are both
 			<strong>functional</strong> and enjoyable to use. Over the past <strong>4 years</strong>, I've
 			worked on projects ranging from research tools to AI-driven platforms, always with a focus on
@@ -43,9 +43,16 @@
 
 	<section id="contact" class="section">
 		<h2>Contact</h2>
-		<p class="text-lg leading-7 w-[55ch] mx-auto my-4"></p>
-		<a href="mailto:mkubincova@proton.me" class="btn btn-primary"
-			><Icon icon="ph:envelope" width={20} />Email me</a
-		>
+		<p class="leading-text mx-auto text-center">
+			I'm always open to new opportunities — feel free to reach out at
+			<button
+				class="cursor-pointer font-bold text-accent inline-flex items-center gap-1"
+				title="Copy to clipboard"
+				on:click={() => {
+					navigator.clipboard.writeText('mkubincova@proton.me');
+					window.alert('Email copied to clipboard');
+				}}>mkubincova@proton.me <Icon icon="ph:copy-simple" /></button
+			>
+		</p>
 	</section>
 </div>

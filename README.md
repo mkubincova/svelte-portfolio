@@ -1,38 +1,75 @@
-# sv
+# Magdalena Kubincová – Portfolio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A personal portfolio website built with **SvelteKit**.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🛠️ Getting Started
+
+### 1. Clone the repository
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/mkubincova/portfolio.git
+cd portfolio
 ```
 
-## Developing
+### 2. Install dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+npm install
+```
+
+### 3. Start the development server
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Visit [http://localhost:5173](http://localhost:5173) to view the site.
 
-To create a production version of your app:
+---
+
+## 🏗️ Building for Production
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+---
+
+## 🧰 Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Iconify](https://iconify.design/)
+- [Vite](https://vitejs.dev/)
+
+---
+
+## 📁 Project Structure
+
+- `/src/lib/components` – Reusable Svelte components (Header, Footer, Cards, etc.)
+- `/src/routes` – Main pages and sections
+- `/src/lib/constants.ts` – Project and mini-app data
+- `/src/app.css` – Global styles and Tailwind config
+
+---
+
+## 📬 Contact
+
+- **Email:** [mkubincova@proton.me](mailto:mkubincova@proton.me)
+- **GitHub:** [mkubincova](https://github.com/mkubincova)
+- **LinkedIn:** [in/mkubincova](https://www.linkedin.com/in/mkubincova/)
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
