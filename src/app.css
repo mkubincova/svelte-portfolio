@@ -4,7 +4,7 @@
 	--container-width: 1080px;
 	--color-background: #f9fafb;
 	--color-foreground: #000;
-	--color-primary: #0ba8aa;
+	--color-accent: #0ba8aa;
 }
 
 html {
@@ -13,37 +13,72 @@ html {
 
 @layer base {
 	h1 {
-		@apply font-bold text-6xl;
+		@apply font-bold text-4xl sm:text-6xl;
 	}
 	h2 {
-		@apply font-bold text-3xl;
+		@apply font-bold text-xl sm:text-3xl;
 	}
 	h3 {
-		@apply font-bold text-2xl;
+		@apply font-bold text-lg sm:text-2xl;
 	}
-	a:not(.btn) {
+	a:not(.btn):not(.icon-btn):not(.nav-link) {
 		@apply underline-offset-4 hover:underline;
 	}
 }
 
 @layer components {
+	/* Layout */
 	.page-content {
 		@apply w-[var(--container-width)] max-w-full mx-auto px-6;
 	}
 	.section {
-		@apply pt-20;
+		@apply pt-24;
+
+		& h2 {
+			@apply text-center mb-6;
+		}
 	}
+
+	/* Buttons & Links */
 	.btn {
-		@apply bg-foreground font-bold text-background px-4 py-2 text-sm w-fit tracking-wider rounded-4xl text-nowrap flex gap-2 items-center hover:bg-foreground/80 hover:no-underline;
+		@apply font-bold px-4 py-2 text-sm w-fit tracking-wider rounded-4xl text-nowrap flex gap-2 items-center hover:no-underline;
 	}
 	.icon-btn {
-		@apply rounded-full p-2 text-background bg-foreground hover:bg-foreground/80 hover:no-underline;
+		@apply rounded-full p-2 hover:no-underline;
 	}
+
+	.btn-primary {
+		@apply bg-foreground text-background hover:bg-foreground/70;
+	}
+	.btn-secondary {
+		@apply border border-foreground text-foreground hover:bg-foreground/5;
+	}
+	.btn-accent {
+		@apply bg-accent text-background hover:bg-accent/70;
+	}
+
+	.nav-link {
+		@apply tracking-wide border-b-2 border-transparent bg-origin-border bg-[linear-gradient(var(--color-accent),var(--color-accent))] bg-position-[0%_100%] bg-no-repeat bg-size-[0%_3px] transition-all duration-500 hover:bg-size-[100%_3px] focus-visible:bg-size-[100%_3px];
+		&.active {
+			@apply bg-size-[100%_3px];
+		}
+	}
+
+	.menu-icon {
+		@apply relative w-full h-0.5 bg-current before:top-2 after:-top-2;
+		&::before,
+		&::after {
+			@apply absolute right-0 w-full h-0.5 bg-current transition-transform;
+		}
+
+		&.open {
+			@apply bg-transparent before:top-0 after:top-0 before:-rotate-45 after:rotate-45;
+		}
+	}
+
+	/* Other */
 	.tag {
 		@apply inline-block bg-foreground/5 text-foreground/80 px-3 py-1 rounded-full text-xs;
-	}
-	.nav-link {
-		@apply tracking-wide;
 	}
 }
 

@@ -7,34 +7,45 @@
 	const recentProjects = projects.slice(0, 5);
 </script>
 
-<div class="page-content py-8">
-	<div id="about" class="text-center">
+<div class="page-content pb-20">
+	<section id="about" class="text-center pt-20">
 		<h1>Hi, I'm Magda</h1>
-		<h2 class="text-primary text-2xl mt-1">Fullstack Web Developer</h2>
-		<p class="text-lg leading-7 w-[55ch] mx-auto my-4">
+		<h2 class="text-accent text-2xl mt-1">Fullstack Web Developer</h2>
+		<p class="sm:text-lg leading-6 sm:leading-7 w-[55ch] max-w-full mx-auto my-4">
 			I specialize in creating <strong>user-centered</strong> web applications that are both
 			<strong>functional</strong> and enjoyable to use. Over the past <strong>4 years</strong>, I've
 			worked on projects ranging from research tools to AI-driven platforms, always with a focus on
 			turning ideas into
 			<strong>meaningful digital products</strong>.
 		</p>
-		<a href={cv_url} class="btn mx-auto"><Icon icon="ph:download-simple" width={20} />Download CV</a
+		<a href={cv_url} class="btn btn-primary mx-auto"
+			><Icon icon="ph:download-simple" width={20} />Download CV</a
 		>
-	</div>
-	<div id="projects" class="section">
+	</section>
+
+	<section id="projects" class="section">
 		<h2>Recent Projects</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each recentProjects as project, index}
 				<CardProject {project} {index} />
 			{/each}
 		</div>
-	</div>
-	<div id="mini-apps" class="section">
+	</section>
+
+	<section id="mini-apps" class="section">
 		<h2>Mini Apps</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each miniApps as project}
 				<CardMiniApp {project} />
 			{/each}
 		</div>
-	</div>
+	</section>
+
+	<section id="contact" class="section">
+		<h2>Contact</h2>
+		<p class="text-lg leading-7 w-[55ch] mx-auto my-4"></p>
+		<a href="mailto:mkubincova@proton.me" class="btn btn-primary"
+			><Icon icon="ph:envelope" width={20} />Email me</a
+		>
+	</section>
 </div>
