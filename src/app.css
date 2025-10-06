@@ -80,7 +80,7 @@ html {
 
 	/* Other */
 	.tag {
-		@apply inline-block bg-foreground/5 text-foreground/80 px-3 py-1 rounded-full text-xs;
+		@apply inline-block border px-2 py-1 rounded-full text-xs;
 	}
 }
 

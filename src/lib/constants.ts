@@ -1,8 +1,9 @@
-import type { Project } from './types';
+import type { MiniApp, Project } from './types';
 
 export const projects: Project[] = [
 	{
 		name: 'health.exe',
+		client: 'H&S health.exe GmbH',
 		description:
 			'A platform for orthopedic healthcare professionals to create and share personalized patient training plans, integrating Azure OpenAI for recommendations. Includes applications for both orthopaedists to manage plans and patients to access them, enabling more efficient, personalized care and improved therapy quality.',
 		technologies: [
@@ -22,35 +23,11 @@ export const projects: Project[] = [
 			'LangChain'
 		],
 		logo_url: '/healthexe-logo.svg',
-		color: '#0170C0'
+		card_styles: 'bg-[#0170C0]/15',
+		heading_color: 'text-[#0170C0]'
 	},
 	{
-		name: 'KIRo4LeMi',
-		description:
-			'A research project developing an AI-powered assistant robot to support employees with disabilities in assembly tasks. It includes a configurator application for assessment of individual needs of employees and an iPad application for guidance and real-time assistance during tasks',
-		technologies: [
-			'React',
-			'Prisma',
-			'PostgreSQL',
-			'Azure',
-			'Open AI',
-			'Typescript',
-			'Tailwind',
-			'Rust',
-			'SwiftUI',
-			'Gitlab'
-		],
-		logo_url: '/kiro4lemi-logo.svg'
-	},
-	{
-		name: 'BrothAR',
-		description:
-			'An augmented reality application for Magic Leap Smart Glasses that enables live support sessions. It features bidirectional communication between the glasses and a web application that allows experts to assist users via video streaming, voice communication, and annotations.',
-		technologies: ['Next.js', 'WebRTC', 'Azure', 'Github', 'Github Actions'],
-		logo_url: '/brothar-logo.png'
-	},
-	{
-		name: 'terrassign Case Management Tool',
+		name: 'terrassign',
 		client: 'terrassign GmbH',
 		description:
 			'A customized case management tool for employee assignment services, featuring a user-friendly application process, centralized communication, document management, and process automation. The solution boosts internal productivity, improves client service, and supports scalable, efficient case management.',
@@ -66,7 +43,42 @@ export const projects: Project[] = [
 			'TypeORM',
 			'Jest'
 		],
-		logo_url: '/terrassing-logo.png'
+		logo_url: '/terrassing-logo.png',
+		card_styles: 'bg-[#d50057]/20',
+		heading_color: 'text-[#d50057]',
+		logo_styles: 'bg-[#ffffff] px-2 py-0.5'
+	},
+	{
+		name: 'KIRo4LeMi',
+		client: 'Fraunhofer IGCV',
+		description:
+			'A research project developing an AI-powered assistant robot to support employees with disabilities in assembly tasks. It includes a configurator application for assessment of individual needs of employees and an iPad application for guidance and real-time assistance during tasks',
+		technologies: [
+			'React',
+			'Prisma',
+			'PostgreSQL',
+			'Azure',
+			'Open AI',
+			'Typescript',
+			'Tailwind',
+			'Rust',
+			'SwiftUI',
+			'Gitlab'
+		],
+		logo_url: '/kiro4lemi-logo.svg',
+		heading_color: 'text-[#043677]',
+		card_styles: 'bg-[#9FC4FE]/30'
+	},
+	{
+		name: 'BrothAR',
+		client: 'TrainAR GmbH',
+		description:
+			'An augmented reality application for Magic Leap Smart Glasses that enables live support sessions. It features bidirectional communication between the glasses and a web application that allows experts to assist users via video streaming, voice communication, and annotations.',
+		technologies: ['Next.js', 'WebRTC', 'Azure', 'Github', 'Github Actions'],
+		logo_url: '/brothar-logo.png',
+		card_styles: 'bg-[#000000]/10',
+		logo_styles: 'bg-[#000000] p-3',
+		heading_color: 'text-[#000000]'
 	},
 	{
 		name: 'HWZ ExamBot',
@@ -74,39 +86,17 @@ export const projects: Project[] = [
 		description:
 			'A proof-of-concept web application for educators to generate AI-powered exams and for students to take interactive quizzes with instant feedback. Teachers can customize and edit exams, while students benefit from engaging, adaptive assessments.',
 		technologies: ['Next.js', 'Typescript', 'Tailwind', 'Node.js', 'Azure OpenAI Services'],
-		logo_url: '/hwz-logo.svg'
-	},
-	{
-		name: 'ClouDiE QuizBot',
-		client: 'MaibornWolff',
-		description:
-			'An interactive quiz platform for AWS exam preparation, replacing video content with engaging, AI-powered questions.',
-		technologies: [
-			'React',
-			'TypeScript',
-			'Next.js',
-			'Jest',
-			'GitLab',
-			'LangChain',
-			'Tailwind',
-			'daisyUI'
-		],
-		image_url: '/cloudie.png'
-	},
-	{
-		name: 'DiEscover',
-		client: 'MaibornWolff',
-		description:
-			'A page-container app with tools like Flowerpots, Peers and Circles to enhance collaboration and organization within the DiE department.',
-		technologies: ['Remix', 'Tailwind', 'Prisma', 'TanStack', 'MongoDB', 'MongoDB Atlas', 'GitLab'],
-		image_url: '/diescover.png'
+		logo_url: '/hwz-logo.svg',
+		card_styles: 'bg-[#003DA6]/20',
+		heading_color: 'text-[#003DA6]',
+		logo_styles: 'bg-[#003DA6]'
 	}
 ];
 
 export const cv_url =
 	'https://docs.google.com/document/d/1pCEdBEHtNjQRjO062Wj673r36v_sgsN7xIMLCdFuL3U/export?format=pdf';
 
-export const miniApps: Project[] = [
+export const miniApps: MiniApp[] = [
 	{
 		name: 'Recipe App',
 		description: 'A collection of recipes filtered by categories with Strapi CMS.',

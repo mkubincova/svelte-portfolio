@@ -3,8 +3,6 @@
 	import CardProject from '$lib/components/CardProject.svelte';
 	import { cv_url, miniApps, projects } from '$lib/constants';
 	import Icon from '@iconify/svelte';
-
-	const recentProjects = projects.slice(0, 5);
 </script>
 
 <div class="page-content pb-20">
@@ -26,7 +24,7 @@
 	<section id="projects" class="section">
 		<h2>Recent Projects</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each recentProjects as project, index}
+			{#each projects as project, index}
 				<CardProject {project} {index} />
 			{/each}
 		</div>

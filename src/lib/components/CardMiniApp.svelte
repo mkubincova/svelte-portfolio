@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Project } from '$lib/types';
+	import type { MiniApp } from '$lib/types';
 	import Icon from '@iconify/svelte';
 
-	export let project: Project;
+	export let project: MiniApp;
 </script>
 
 <div class="relative">
