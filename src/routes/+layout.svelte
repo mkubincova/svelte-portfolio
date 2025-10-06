@@ -12,10 +12,7 @@
 		property="og:description"
 		content="Fullstack web developer specializing in user-centered web applications. Over 4 years of experience turning ideas into meaningful digital products."
 	/>
-	<!-- <meta
-		property="og:image"
-		content="https://res.cloudinary.com/dqorjojrw/image/upload/v1686223834/Portfolio%20site/mkubincova-cover_ye7tln.png"
-	/> -->
+	<meta property="og:image" content="/cover.png" />
 	<!-- <meta property="og:url" content="https://mkubincova.vercel.app/" /> -->
 </svelte:head>
 
