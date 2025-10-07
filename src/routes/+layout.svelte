@@ -13,7 +13,7 @@
 		content="Fullstack web developer specializing in user-centered web applications. Over 4 years of experience turning ideas into meaningful digital products."
 	/>
 	<meta property="og:image" content="/cover.png" />
-	<meta property="og:url" content="https://mkubincova.vercel.app/" />
+	<meta property="og:url" content="https://mkubincova.vercel.app" />
 </svelte:head>
 
 <div class="min-h-screen bg-background flex flex-col">
