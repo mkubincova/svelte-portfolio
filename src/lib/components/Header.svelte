@@ -36,7 +36,7 @@
 
 		<!-- desktop menu -->
 		<ul class="hidden sm:flex items-center gap-6 ml-auto">
-			{#each menuItems as item}
+			{#each menuItems as item (item.name)}
 				<li>
 					<a href={item.href} class="nav-link" class:active={current === item.href.slice(2)}
 						>{item.name}</a
@@ -62,7 +62,7 @@
 			class:translate-x-0={navOpen}
 			class:translate-x-full={!navOpen}
 		>
-			{#each menuItems as item}
+			{#each menuItems as item (item.name)}
 				<li>
 					<a
 						href={item.href}

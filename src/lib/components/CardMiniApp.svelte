@@ -11,7 +11,7 @@
 		<img src={project.image_url} alt="" class="w-full h-auto rounded-lg border" />
 		<p class="my-4 flex-1">{project.description}</p>
 		<ul class="flex flex-wrap gap-2">
-			{#each project.technologies as tech}
+			{#each project.technologies as tech (tech)}
 				<li class="tag">{tech}</li>
 			{/each}
 		</ul>

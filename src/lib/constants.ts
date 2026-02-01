@@ -112,5 +112,13 @@ export const miniApps: MiniApp[] = [
 		repository_url: 'https://github.com/mkubincova/weather-app',
 		demo_url: 'https://weather-app-mkubincova.vercel.app/',
 		image_url: '/weather.png'
+	},
+	{
+		name: 'Video Call App',
+		description: 'A peer-to-peer video calling app with room-based calls, built using WebRTC.',
+		technologies: ['TypeScript', 'WebRTC', 'WebSockets', 'Vite', 'Node.js'],
+		repository_url: 'https://github.com/mkubincova/webrtc-video-call',
+		demo_url: 'https://webrtc-video-call-seven.vercel.app/',
+		image_url: '/video.png'
 	}
 ];

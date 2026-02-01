@@ -11,7 +11,7 @@
 		<small>{project.client}</small>
 		<p class="my-4 flex-1 text-sm" class:md:text-base={index === 0}>{project.description}</p>
 		<ul class="flex flex-wrap gap-2">
-			{#each project.technologies as tech}
+			{#each project.technologies as tech (tech)}
 				<li class="tag">{tech}</li>
 			{/each}
 		</ul>
