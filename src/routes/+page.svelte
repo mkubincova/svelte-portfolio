@@ -11,7 +11,7 @@
 		<h2 class="text-accent text-xl sm:text-2xl mt-1">Fullstack Web Developer</h2>
 		<p class="leading-text mx-auto my-4">
 			I specialize in creating <strong>user-centered</strong> web applications that are both
-			<strong>functional</strong> and enjoyable to use. Over the past <strong>4 years</strong>, I've
+			<strong>functional</strong> and enjoyable to use. Over the past <strong>5 years</strong>, I've
 			worked on projects ranging from research tools to AI-driven platforms, always with a focus on
 			turning ideas into
 			<strong>meaningful digital products</strong>.
@@ -24,7 +24,7 @@
 	<section id="projects" class="section">
 		<h2>Recent Projects</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each projects as project, index}
+			{#each projects as project, index (project.name)}
 				<CardProject {project} {index} />
 			{/each}
 		</div>
@@ -33,7 +33,7 @@
 	<section id="mini-apps" class="section">
 		<h2>Mini Apps</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each miniApps as project}
+			{#each miniApps as project (project.name)}
 				<CardMiniApp {project} />
 			{/each}
 		</div>
