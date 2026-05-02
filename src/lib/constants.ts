@@ -98,17 +98,17 @@ export const cv_url =
 
 export const miniApps: MiniApp[] = [
 	{
-		name: 'Recipe App',
-		description: 'A collection of recipes filtered by categories with Strapi CMS.',
-		technologies: ['React', 'Sass', 'GraphQL', 'Strapi'],
-		repository_url: 'https://github.com/mkubincova/recipe-app-frontend',
-		demo_url: 'https://recipe-app-frontend-iota.vercel.app/',
-		image_url: '/recipes.png'
+		name: 'Daily Dish',
+		description: 'A collection of recipes filtered by tags and categories.',
+		technologies: ['Nuxt', 'Tailwind', 'Python', 'PostreSQL', 'FastAPI', 'OpenSpec'],
+		repository_url: 'https://github.com/mkubincova/daily-dish',
+		demo_url: 'https://daily-dish-dsfs.vercel.app/',
+		image_url: '/daily-dish.png'
 	},
 	{
 		name: 'Weather App',
 		description: 'A weather app displaying current weather and forecasts for different locations.',
-		technologies: ['Vue', 'TailwindCSS', 'Mapbox', 'OpenWeatherMap'],
+		technologies: ['Vue', 'Tailwind', 'Mapbox', 'OpenWeatherMap'],
 		repository_url: 'https://github.com/mkubincova/weather-app',
 		demo_url: 'https://weather-app-mkubincova.vercel.app/',
 		image_url: '/weather.png'
