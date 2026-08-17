@@ -120,5 +120,14 @@ export const miniApps: MiniApp[] = [
 		repository_url: 'https://github.com/mkubincova/webrtc-video-call',
 		demo_url: 'https://webrtc-video-call-seven.vercel.app/',
 		image_url: '/video.png'
+	},
+	{
+		name: 'System information',
+		description:
+			'A minimal static web page that displays device and environment information of visitor.',
+		technologies: ['HTML', 'CSS', 'JavaScript'],
+		repository_url: 'https://github.com/mkubincova/who-am-i',
+		demo_url: 'https://whoami-123.vercel.app/',
+		image_url: '/system-info.png'
 	}
 ];
